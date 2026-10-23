@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="FAROUK STUDIO — صناعة الفيديوهات السينمائية، الإعلانات، القصص والمحتوى الإبداعي بالذكاء الاصطناعي.">
+<title>FAROUK STUDIO | نصنع الخيال</title>
+<style>
+:root{--bg:#090909;--panel:#141414;--gold:#d8b45a;--gold2:#f5df9a;--text:#f8f5ee;--muted:#b9b4a8;--line:rgba(216,180,90,.23)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(9,9,9,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:Arial,sans-serif;font-weight:900;letter-spacing:2px;color:var(--gold);font-size:1.25rem}.brand span{display:block;font-family:Tahoma,sans-serif;font-size:.68rem;letter-spacing:0;color:var(--muted);font-weight:400}.links{display:flex;gap:22px;align-items:center;font-size:.92rem;color:var(--muted)}.links a:hover{color:var(--gold)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--gold);padding:7px 11px;border-radius:8px;font-size:1rem}
+.hero{min-height:670px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:48px;padding:76px 0 90px;position:relative;overflow:hidden}.eyebrow{color:var(--gold);font-size:.82rem;letter-spacing:2px;font-weight:bold}.hero h1{font-size:clamp(2.6rem,6vw,5.3rem);line-height:1.15;margin:16px 0}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{color:var(--muted);max-width:570px;font-size:1.08rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:8px;border:1px solid var(--gold);font-weight:bold;transition:.2s}.btn.primary{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#15120a}.btn:hover{transform:translateY(-2px)}.btn.secondary{color:var(--gold)}.art{min-height:390px;border:1px solid var(--line);border-radius:24px;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at center,rgba(216,180,90,.18),transparent 52%),linear-gradient(145deg,#1c1a15,#080808 70%);box-shadow:0 25px 80px #000}.art:before,.art:after{content:"";position:absolute;border:1px solid rgba(216,180,90,.28);border-radius:50%;width:330px;height:330px;transform:rotate(-25deg)}.art:after{width:245px;height:390px;transform:rotate(35deg)}.monogram{font-family:Arial,sans-serif;font-size:clamp(5rem,12vw,9rem);font-weight:900;color:transparent;-webkit-text-stroke:2px var(--gold);text-shadow:0 0 45px rgba(216,180,90,.2);z-index:1}.art-label{position:absolute;bottom:25px;left:25px;right:25px;text-align:center;color:var(--gold2);letter-spacing:3px;font:700 .8rem Arial,sans-serif}
+section{padding:78px 0}.section-head{text-align:center;margin-bottom:36px}.section-head h2{font-size:clamp(1.8rem,4vw,2.7rem);margin:0 0 8px}.section-head p{color:var(--muted);margin:0}.gold-line{height:2px;width:64px;background:var(--gold);margin:14px auto 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:25px;border:1px solid var(--line);background:linear-gradient(150deg,#171612,#0e0e0e);border-radius:16px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:var(--gold)}.icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:rgba(216,180,90,.1);color:var(--gold);font-size:1.45rem}.card h3{margin:16px 0 6px}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.work{aspect-ratio:4/3;border-radius:15px;border:1px solid var(--line);padding:20px;display:flex;flex-direction:column;justify-content:end;overflow:hidden;position:relative;background:radial-gradient(circle at 75% 20%,rgba(216,180,90,.28),transparent 35%),linear-gradient(145deg,#29241a,#111 65%)}.work:nth-child(2){background:radial-gradient(circle at 20% 25%,rgba(111,81,155,.35),transparent 40%),linear-gradient(145deg,#211b29,#0c0c0c)}.work:nth-child(3){background:radial-gradient(circle at 70% 25%,rgba(37,105,108,.35),transparent 40%),linear-gradient(145deg,#132021,#090909)}.work small{color:var(--gold);letter-spacing:1px}.work h3{font-size:1.3rem;margin:5px 0}.work p{color:var(--muted);margin:0;font-size:.9rem}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:38px;align-items:center}.about-mark{padding:40px;text-align:center;border:1px solid var(--line);border-radius:20px;background:var(--panel)}.about-mark strong{font:900 3.7rem Arial;color:var(--gold)}.about h2{font-size:2rem;margin:0 0 12px}.about p{color:var(--muted)}
+.contact-box{border:1px solid var(--line);border-radius:20px;padding:35px;background:radial-gradient(ellipse at top,rgba(216,180,90,.12),transparent 70%),#111;text-align:center}.contact-box h2{margin:0;font-size:2rem}.contact-box p{color:var(--muted)}.contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.foot strong{color:var(--gold)}
+@media(max-width:760px){.menu{display:block}.links{display:none;position:absolute;top:76px;right:0;left:0;padding:18px 5%;background:#0c0c0c;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:12px}.links.open{display:flex}.hero{grid-template-columns:1fr;padding:55px 0 65px;gap:28px;min-height:auto}.art{min-height:280px}.cards,.portfolio{grid-template-columns:1fr}.work{aspect-ratio:16/9}.about{grid-template-columns:1fr}.about-mark{padding:25px}section{padding:58px 0}.hero h1{font-size:clamp(2.5rem,13vw,4.3rem)}}
+
+/* FAROUK STUDIO AI chat */
+.chat-launcher{position:fixed;bottom:22px;left:22px;z-index:1000;border:1px solid #f5df9a;border-radius:999px;background:linear-gradient(135deg,#f5df9a,#d8b45a);color:#15120a;padding:13px 18px;font-weight:800;font-family:Tahoma,Arial,sans-serif;box-shadow:0 8px 30px #0009;cursor:pointer;display:flex;align-items:center;gap:9px}
+.chat-launcher .chat-spark{font-size:1.25rem}
+.chat-panel{position:fixed;bottom:84px;left:22px;z-index:1001;width:min(370px,calc(100vw - 28px));height:min(540px,calc(100dvh - 120px));display:none;flex-direction:column;border:1px solid rgba(216,180,90,.45);border-radius:18px;overflow:hidden;background:#0e0e0e;box-shadow:0 22px 70px #000b}
+.chat-panel.open{display:flex}
+.chat-head{display:flex;align-items:center;gap:11px;padding:15px;background:linear-gradient(120deg,#211d12,#101010);border-bottom:1px solid rgba(216,180,90,.25)}
+.chat-avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#d8b45a;color:#111;font-weight:900;font-family:Arial,sans-serif}
+.chat-head-text{flex:1}.chat-head-text strong{display:block;color:#f5df9a}.chat-head-text small{color:#b9b4a8;font-size:.75rem}
+.chat-close{border:1px solid #51462a;background:transparent;color:#f5df9a;border-radius:8px;padding:5px 10px;cursor:pointer;font-size:1.1rem}
+.chat-messages{flex:1;overflow:auto;padding:15px;display:flex;flex-direction:column;gap:10px}
+.chat-msg{max-width:88%;padding:10px 12px;border-radius:13px;font-size:.9rem;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}
+.chat-msg.bot{align-self:flex-start;background:#1c1a15;border:1px solid rgba(216,180,90,.18);color:#f8f5ee;border-bottom-right-radius:4px}
+.chat-msg.user{align-self:flex-end;background:#d8b45a;color:#17130a;border-bottom-left-radius:4px}
+.chat-suggestions{padding:0 13px 11px;display:flex;gap:7px;flex-wrap:wrap}
+.chat-suggestions button{font-family:Tahoma,Arial,sans-serif;background:#171612;border:1px solid rgba(216,180,90,.35);color:#f5df9a;border-radius:999px;padding:6px 9px;font-size:.75rem;cursor:pointer}
+.chat-form{display:flex;gap:8px;padding:12px;border-top:1px solid rgba(216,180,90,.2);background:#111}
+.chat-form input{min-width:0;flex:1;border:1px solid #393327;border-radius:10px;background:#090909;color:#fff;padding:11px;font-family:Tahoma,Arial,sans-serif;font-size:.9rem;outline:none}
+.chat-form input:focus{border-color:#d8b45a}
+.chat-form button{border:0;border-radius:10px;background:#d8b45a;color:#15120a;padding:0 15px;font-family:Tahoma,Arial,sans-serif;font-weight:800;cursor:pointer}
+.chat-note{padding:0 13px 9px;color:#918b7d;font-size:.68rem;background:#111}
+@media(max-width:480px){.chat-launcher{bottom:14px;left:14px;padding:11px 14px}.chat-panel{bottom:72px;left:10px;width:calc(100vw - 20px);height:min(520px,calc(100dvh - 95px))}}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">FAROUK STUDIO<span>CREATIVE VISUALS • AI FILMMAKING</span></a>
+    <button class="menu" id="menuBtn" aria-label="فتح القائمة">☰ القائمة</button>
+    <nav class="links" id="navLinks">
+      <a href="#home">الرئيسية</a><a href="#services">خدماتنا</a><a href="#portfolio">أعمالنا</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">الإبداع يبدأ بفكرة</div>
+      <h1>نحوّل الخيال<br>إلى <em>مشاهد لا تُنسى.</em></h1>
+      <p>مرحبًا بك في FAROUK STUDIO — مساحة للإبداع البصري وصناعة الفيديوهات السينمائية والإعلانات والقصص باستخدام أدوات الذكاء الاصطناعي.</p>
+      <div class="actions"><a class="btn primary" href="#portfolio">اكتشف أعمالنا</a><a class="btn secondary" href="#contact">ابدأ مشروعك ↗</a></div>
+    </div>
+    <div class="art" aria-label="شعار فاروق ستوديو"><div class="monogram">F</div><div class="art-label">IMAGINE · CREATE · INSPIRE</div></div>
+  </div>
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><h2>ماذا نقدّم؟</h2><p>أفكار قوية، تنفيذ بصري، ولمسة سينمائية.</p><div class="gold-line"></div></div>
+      <div class="cards">
+        <article class="card"><div class="icon">🎬</div><h3>فيديوهات سينمائية</h3><p>قصص قصيرة ومشاهد درامية بمظهر سينمائي جذّاب.</p></article>
+        <article class="card"><div class="icon">✦</div><h3>إعلانات إبداعية</h3><p>محتوى بصري لتقديم المنتجات والخدمات بأسلوب احترافي.</p></article>
+        <article class="card"><div class="icon">😄</div><h3>ميمز ومحتوى اجتماعي</h3><p>أفكار ساخرة ومحتوى سريع مناسب لمنصات التواصل.</p></article>
+        <article class="card"><div class="icon">🤖</div><h3>إبداع بالذكاء الاصطناعي</h3><p>برومبتات ومفاهيم بصرية تساعد على تحويل الفكرة إلى مشهد.</p></article>
+        <article class="card"><div class="icon">🖼️</div><h3>تصميم الهوية البصرية</h3><p>اتجاه بصري متناسق للأسماء والمشاريع وصفحات المحتوى.</p></article>
+        <article class="card"><div class="icon">📱</div><h3>محتوى قصير</h3><p>أفكار مهيّأة للفيديو العمودي وReels وShorts.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="section-head"><h2>مساحات الإبداع</h2><p>نماذج لأقسام يمكن عرض أعمالك الحقيقية فيها.</p><div class="gold-line"></div></div>
+      <div class="portfolio">
+        <article class="work"><small>01 / CINEMATIC</small><h3>حكايات من الشاشة</h3><p>قصص ومشاهد تحمل طابعًا سينمائيًا.</p></article>
+        <article class="work"><small>02 / COMEDY</small><h3>ضحكة بفكرة</h3><p>ميمز وسخرية ذكية ومحتوى اجتماعي.</p></article>
+        <article class="work"><small>03 / COMMERCIAL</small><h3>إعلان يلفت النظر</h3><p>عرض بصري للمنتجات والخدمات.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap about">
+      <div class="about-mark"><strong>F.</strong><div>FAROUK STUDIO</div><small style="color:var(--muted)">CREATIVE BY DESIGN</small></div>
+      <div><div class="eyebrow">عن الاستوديو</div><h2>كل فكرة تستحق أن تُروى بطريقة مختلفة.</h2><p>FAROUK STUDIO هو مفهوم إبداعي يجمع بين الخيال، الصورة، والسرد البصري. الهدف هو تقديم محتوى مميز يترك أثرًا عند الجمهور — من أول ثانية إلى آخر مشهد.</p><p>هذا الموقع نموذج أولي قابل للتخصيص بإضافة أعمالك الفعلية، روابط صفحاتك، ووسائل التواصل الخاصة بك.</p></div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-box"><div class="eyebrow">لنبدأ فكرة جديدة</div><h2>عندك فكرة؟ خلّيها تشوف النور.</h2><p>أضف هنا رابط صفحتك أو بريدك أو رقم التواصل حتى يتمكن الزوار من الوصول إليك.</p><div class="contact-actions"><a class="btn primary" href="mailto:hello@example.com">راسلنا عبر البريد</a><a class="btn secondary" href="#home">العودة للأعلى ↑</a></div><small style="color:var(--muted)">ملاحظة: hello@example.com رابط تجريبي، يجب تغييره ببريدك الحقيقي.</small></div>
+    </div>
+  </section>
+
+<button class="chat-launcher" id="chatLauncher" aria-label="افتح محادثة مساعد FAROUK"><span class="chat-spark">✦</span> تحدث مع مساعد FAROUK</button>
+<section class="chat-panel" id="chatPanel" aria-label="محادثة مساعد FAROUK" aria-hidden="true">
+  <div class="chat-head">
+    <div class="chat-avatar">F.</div>
+    <div class="chat-head-text"><strong>مساعد FAROUK STUDIO</strong><small>مساعد ذكاء اصطناعي</small></div>
+    <button class="chat-close" id="chatClose" aria-label="إغلاق المحادثة">×</button>
+  </div>
+  <div class="chat-messages" id="chatMessages" aria-live="polite">
+    <div class="chat-msg bot">أهلًا بيك في FAROUK STUDIO ✨\nأنا مساعد ذكاء اصطناعي. اسألني على الخدمات، الفيديوهات، الإعلانات أو كيفاش تبدأ مشروعك.</div>
+  </div>
+  <div class="chat-suggestions">
+    <button type="button" data-question="ما هي خدماتكم؟">خدماتكم</button>
+    <button type="button" data-question="أريد صناعة فيديو">صناعة فيديو</button>
+    <button type="button" data-question="كيف أتواصل معكم؟">التواصل</button>
+  </div>
+  <form class="chat-form" id="chatForm">
+    <input id="chatInput" type="text" maxlength="500" placeholder="اكتب سؤالك هنا..." autocomplete="off" aria-label="اكتب رسالتك">
+    <button type="submit">إرسال</button>
+  </form>
+  <div class="chat-note">مساعد ذكي متصل عبر خادم آمن.</div>
+</section>
+
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> <strong>FAROUK STUDIO</strong> — جميع الحقوق محفوظة.</span><span>صُنع بالإبداع ✦</span></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+const chatLauncher=document.getElementById('chatLauncher');
+const chatPanel=document.getElementById('chatPanel');
+const chatClose=document.getElementById('chatClose');
+const chatMessages=document.getElementById('chatMessages');
+const chatForm=document.getElementById('chatForm');
+const chatInput=document.getElementById('chatInput');
+
+function setChatOpen(open){
+  chatPanel.classList.toggle('open',open);
+  chatPanel.setAttribute('aria-hidden',String(!open));
+  chatLauncher.setAttribute('aria-expanded',String(open));
+  if(open) setTimeout(()=>chatInput.focus(),50);
+}
+chatLauncher.setAttribute('aria-expanded','false');
+chatLauncher.addEventListener('click',()=>setChatOpen(!chatPanel.classList.contains('open')));
+chatClose.addEventListener('click',()=>setChatOpen(false));
+
+function addChatMessage(text,role){
+  const item=document.createElement('div');
+  item.className='chat-msg '+role;
+  item.textContent=text;
+  chatMessages.appendChild(item);
+  chatMessages.scrollTop=chatMessages.scrollHeight;
+}
+
+let chatHistory=[];
+async function sendChatMessage(message){
+  const clean=message.trim();
+  if(!clean) return;
+  addChatMessage(clean,'user');
+  chatHistory.push({role:'user',content:clean});
+  chatInput.value='';
+  chatInput.disabled=true;
+  const sendButton=chatForm.querySelector('button[type="submit"],button');
+  if(sendButton){sendButton.disabled=true;sendButton.textContent='...';}
+  const waiting=document.createElement('div');
+  waiting.className='chat-msg bot';
+  waiting.textContent='مساعد FAROUK يفكّر...';
+  chatMessages.appendChild(waiting);
+  chatMessages.scrollTop=chatMessages.scrollHeight;
+  try{
+    const response=await fetch('/api/chat',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({messages:chatHistory.slice(-12)})
+    });
+    const data=await response.json().catch(()=>({}));
+    if(!response.ok) throw new Error(data.error||'تعذر الاتصال بالمساعد.');
+    const reply=data.reply||'لم يصل رد. حاول مرة أخرى.';
+    waiting.textContent=reply;
+    chatHistory.push({role:'assistant',content:reply});
+  }catch(error){
+    waiting.textContent='ما قدرتش نتصل بالمساعد الآن. تأكد من إعداد OPENAI_API_KEY في الاستضافة، ثم حاول مجددًا.';
+    chatHistory.pop();
+    console.error('FAROUK chat error:',error);
+  }finally{
+    chatInput.disabled=false;
+    if(sendButton){sendButton.disabled=false;sendButton.textContent='إرسال';}
+    chatMessages.scrollTop=chatMessages.scrollHeight;
+    chatInput.focus();
+  }
+}
+chatForm.addEventListener('submit',event=>{
+  event.preventDefault();
+  sendChatMessage(chatInput.value);
+});
+document.querySelectorAll('.chat-suggestions button').forEach(button=>{
+  button.addEventListener('click',()=>sendChatMessage(button.dataset.question||button.textContent));
+});
+
+
+</script>
+</body>
+</html>
